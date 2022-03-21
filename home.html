@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:wght@300&family=Noto+Serif&family=Roboto:wght@100;700&display=swap"
+        rel="stylesheet">
+
+    <title>Book Your Cab</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Cabzo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./booking.html">Booking</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item " href="#">Feedback</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contact.html">Contact us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign
+                        Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Travel Booking System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-danger">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an Travel Booking Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-danger">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-3 mx-3 abc">
+        <h1 class="display-5 fw-bold text-danger ">Welcome To Online Cab Booking</h1>
+
+    </div>
+
+    <div class="images">
+        <div class="container book">
+            <form>
+
+                <input type="text" placeholder="Enter PickUp Point"><br>
+                <img class="my-2" src="./photos/arrow.png" alt=""> <br>
+                <input type="text" name="" id="" placeholder="Enter Drop Point"><br><br>
+                <button><a href="./booking.html">Book </a></button>
+
+
+
+
+            </form>
+        </div>
+        <div>
+            <!-- <img style="width: 700px;" src="./photos/cab1.png" alt=""> -->
+            <img style="width: 700px;" src="./photos/cab4.jpg" alt="">
+        </div>
+    </div>
+
+
+    <hr>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div style="background-color: rgb(27, 15, 37);" class="card h-100">
+
+                <div class="card-body">
+                    <h5 class="card-title text-danger">SAFETY +</h5>
+                    <p class="card-text text-light">With Safety+ we have brought in a set of measures like Sanitized
+                        Cabs, mandatory masks etc. to ensure you travel safely across city.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div style="background-color: rgb(27, 15, 37);" class="card h-100">
+
+                <div class="card-body">
+                    <h5 class="card-title text-danger">SUPERIOR CUSTOMER SERVICE</h5>
+                    <p class="card-text text-light">We put our experience and relationships to good use and are
+                        available to solve your cab travel issues.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div style="background-color: rgb(27, 15, 37);" class="card h-100">
+
+                <div class="card-body ">
+                    <h5 class="card-title text-danger">LOWER PRICES</h5>
+                    <p class="card-text text-light">We take care of your travel beyond ticketing by providing you with
+                        innovative and unique benefits.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="DC_215_container my-3" style="max-width:1013px;margin:0 auto">
+        <div class="D215_heading">
+            <div>
+                <h2 style="font-size:24px; font-weight: 700"> <strong>How to Book a Cab Online on Cabzo?</strong> </h2>
+            </div>
+        </div>
+        <div class="DC_215_content">
+            <div class="DC_215_description  text-danger">
+                <!-- -->Cab Booking | A to Z of Booking Online Cab Tickets
+                <!-- -->
+            </div>
+            <ul class="DC_215_list">
+                <li class="DC215_howTo_step">
+                    <!-- -->Enter the Source and Destination locations in the “From” and “To” tab respectively.
+                    <!-- -->
+                </li>
+                
+                <li class="DC215_howTo_step">
+                    <!-- -->Select a Cab of your choice from the list of cabes that are displayed.
+                    <!-- -->
+                </li>
+                <li class="DC215_howTo_step">
+                    <!-- -->Select a  boarding, and dropping points and hit “Proceed to Book” for final cab
+                    booking.
+                    <!-- -->
+                </li>
+                <li class="DC215_howTo_step">
+                    <!-- -->Fill in the “Passenger Information” and “Contact Information”.
+                    <!-- -->
+                </li>
+                <li class="DC215_howTo_step">
+                    <!-- -->You can even choose to insure your cab booking so that you will be covered in case of an
+                    accident or loss of luggage and then click “Proceed to Pay”.
+                    <!-- -->
+                </li>
+                <li class="DC215_howTo_step">
+                    <!-- -->Enter the offer code (if applicable), select your mode of payment and complete the payment
+                    procedure for cab tickets online.
+                    <!-- -->
+                </li>
+                <li class="DC215_howTo_step ">
+                    <!-- -->Once this is done, you will receive an M-ticket on your mobile and an e-ticket on the email
+                    ID that was entered under “Contact Information.”
+                    <!-- -->
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="DC_213_Maindiv">
+        <div class="DC_213_heading abc">
+            <h1 style="font-size:24px; font-weight: 700"><strong> Covid-19 Update for Traveling by Cab in India</strong>
+            </h1>
+        </div>
+        <div class="DC_213_subHeading text-danger abc">
+            <h3>Ensure Safety with Safe cabs</h3>
+        </div>
+
+        <div class="row flex justify-content-center">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h1.png" alt="">
+                <p>Check out travel restrictions that apply to your source and destination.</p>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4 ">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h2.png" alt="">
+                <p>Book cab tickets anywhere in India in advance to avoid any physical contact.</p>
+            </div><!-- /.col-lg-4 -->
+            <!-- /.col-lg-4 -->
+        </div>
+
+
+        <div class="row flex justify-content-center">
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h4.png" alt="">
+                <p>Wear a mask all the time while you are on the cab.</p>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h3.png" alt="">
+                <p>Carry your personal hygiene items like hand sanitizer, tissues, and soap.</p>
+            </div>
+            <!-- <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h5.png" alt="">
+                <p>cabes may not be providing you a linen or blanket, so make sure to pack yours during a long trip.</p>
+            </div>/.col-lg-4 -->
+            <!-- <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./photos/h6.png" alt="">
+                <p>Due to temperature checks and precautionary measures, cabs may get delayed. Save some additional
+                    time for your trip.</p>
+            </div>/.col-lg-4 -->
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container ">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+                    <span class="text-muted">© 2022 Cabzo Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+                    <li class="ms-3"><a class="text-muted " href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_nikam_abhi_/"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+
+                </ul>
+
+
+            </footer>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/2355818273.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
